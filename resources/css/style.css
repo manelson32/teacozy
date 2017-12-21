@@ -71,8 +71,10 @@ header nav {
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding-top: 70px;
+
 }
 
 #featured {
@@ -108,4 +110,47 @@ header nav {
 }
 .row2 .totm {
   margin: 0px 15px;
+}
+
+#locations {
+  background-image: url("../images/img-locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  margin-top: 75px;
+}
+
+#locations h2 {
+  margin: 50px auto 15px auto;
+}
+
+#locations .flex {
+  justify-content: center;
+}
+
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  margin: 0 20px;
+}
+
+.contact {
+  height: 200px;
+
+}
+
+.contact h2 {
+  margin: 10px auto 41px auto;
+}
+
+footer {
+  text-align: left;
+  width: 100%;
+}
+
+footer h5 {
+  margin-left: 20px;
 }
