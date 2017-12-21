@@ -9,13 +9,14 @@ body {
 }
 
 header {
-  height: 69px;
+  height: 68px;
   border-bottom: 1px solid seashell;
   position: fixed;
   z-index: 5;
   width: 100%;
   display: flex;
   align-items: center;
+  /*background-color: black;*/
 }
 
 .logo {
@@ -40,4 +41,71 @@ nav span {
 
 header nav {
   padding-right: 5px;
+}
+
+.flex {
+  display: flex;
+  top: 70px;
+}
+
+#mission {
+  background-image: url("../images/img-mission-background.jpg");
+
+  width: 1200px;
+  height: 700px;
+  align-items: center;
+
+}
+
+.banner {
+  background-color: black;
+
+  width: 1200px;
+  height: 100px;
+}
+
+.banner h2, .banner h4 {
+  margin: 10px auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+}
+
+#featured {
+  width: 1000px;
+}
+
+#featured .flex {
+  flex-direction: column;
+
+}
+
+.totm {
+  width: 300px;
+}
+
+.totm img {
+  height: 200px;
+  margin: 10px auto;
+}
+
+.totm h4 {
+  margin: 0px auto;
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row2 {
+  display: flex;
+  justify-content: center;
+}
+.row2 .totm {
+  margin: 0px 15px;
 }
