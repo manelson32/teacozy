@@ -3,7 +3,7 @@ body {
   font-size: 22px;
   color: seashell;
   background-color: black;
-  opacity: 0.9;
+
   text-align: center;
   margin: 0;
 }
@@ -16,7 +16,7 @@ header {
   width: 100%;
   display: flex;
   align-items: center;
-  /*background-color: black;*/
+  background-color: black;
 }
 
 .logo {
@@ -50,16 +50,13 @@ header nav {
 
 #mission {
   background-image: url("../images/img-mission-background.jpg");
-
   width: 1200px;
   height: 700px;
   align-items: center;
-
 }
 
 .banner {
   background-color: black;
-
   width: 1200px;
   height: 100px;
 }
@@ -69,35 +66,53 @@ header nav {
 }
 
 .main {
+  /*
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  ^^ It works. The webpage looks like the redline, but doesn't behave like the demo when the browser is resized. So let's try...*/
+  width: 1200px;
+  margin: auto;
   padding-top: 70px;
+  opacity: 0.9; /* I put this in <body> at first because of where it was called out on the redline. But the header looked funny just barely sheer, so I moved it here.*/
 
 }
 
 #featured {
   width: 1000px;
+  padding-top: 70px;
+  margin: auto;
 }
 
 #featured .flex {
-  flex-direction: column;
+  /*flex-direction: column;*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+#featured h2, #featured h4 {
+  margin: 0;
+  padding: 10px;
 }
 
 .totm {
-  width: 300px;
+  padding: 5px;
+
 }
 
 .totm img {
   height: 200px;
-  margin: 10px auto;
+  margin: 10px;/* Why is this margin being ignored??*/
+
 }
 
 .totm h4 {
   margin: 0px auto;
+  padding: 5px;
 }
+
+/* I left this section here as a reminder to myself; Don't do it this way. There's a better way. There's an easier way.
 
 .row1 {
   display: flex;
@@ -108,19 +123,23 @@ header nav {
   display: flex;
   justify-content: center;
 }
+
 .row2 .totm {
   margin: 0px 15px;
 }
+*/
 
 #locations {
   background-image: url("../images/img-locations-background.jpg");
   height: 500px;
   width: 1200px;
-  margin-top: 75px;
+  padding-top: 70px;
+  margin-top: 70px;
 }
 
 #locations h2 {
-  margin: 50px auto 15px auto;
+  margin: 0;
+  padding: 15px;
 }
 
 #locations .flex {
@@ -139,7 +158,6 @@ header nav {
 
 .contact {
   height: 200px;
-
 }
 
 .contact h2 {
