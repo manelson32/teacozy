@@ -1,3 +1,4 @@
+/* It looks like the redline, but I will admit that there is much code redundancy here. I just didn't mange my time well on this project and the preceding lessons, and got behind. I will do better! */
 body {
   font-family: Helvetica;
   font-size: 22px;
@@ -71,7 +72,7 @@ header nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  ^^ It works. The webpage looks like the redline, but doesn't behave like the demo when the browser is resized. So let's try...*/
+  ^^ It works. The webpage looks like the redline, but doesn't behave like the demo when the browser is resized. So let's try...vv*/
   width: 1200px;
   margin: auto;
   padding-top: 70px;
@@ -107,8 +108,7 @@ header nav {
 
 }
 
-.totm h4 {
-  margin: 0px auto;
+#featured .totm h4 {
   padding: 5px;
 }
 
@@ -127,7 +127,7 @@ header nav {
 .row2 .totm {
   margin: 0px 15px;
 }
-*/
+ Note to self: padding and margins, padding and margins, padding and margins!*/
 
 #locations {
   background-image: url("../images/img-locations-background.jpg");
